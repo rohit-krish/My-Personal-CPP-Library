@@ -1,8 +1,26 @@
 ## MyLIb (My Personal C++ Lib)
 
+### FileStructure
+
+<pre>
+/usr/lib/mylib
+├── include
+│   └── mylib
+│       └── tileIt.hpp
+├── lib
+│   └── libtileIt.so
+├── mylib.pc
+├── README.md
+├── src
+│   └── tileIt.cpp
+├── test
+└── test.cpp
+
+4 directories, 7 files
+</pre>
+
 ### How to create a shared lib(dynamic lib)
 ```
-cd /usr/lib/mylib
 g++ -shared -o ./lib/libtileIt.so -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_imgproc -lopencv_imgcodecs -lopencv_highgui ./src/tileIt.cpp
 ```
 
