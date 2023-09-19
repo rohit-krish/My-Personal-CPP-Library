@@ -1,0 +1,5 @@
+Name: MyLib
+Description: My Personal C++ Scripts.
+Version: 1.0.0
+Libs: -L/usr/lib/mylib/lib -ltileIt
+Cflags: -I/usr/lib/mylib/include
